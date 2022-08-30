@@ -1,0 +1,293 @@
+html, body{
+    background-color: rgb(250, 242, 245);
+}
+
+* { 
+    font-family: 'Poppins';
+}
+
+.edit-index {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+ }
+    
+
+.edit-index a{
+    display: inline;
+    text-decoration: none;
+    background-color: rgb(243, 188, 211);
+    padding: 4px 8px;
+    margin: 2px 0;
+    color: #e91745;
+    border-radius: 4px;
+
+}
+
+.edit-index a:hover{
+    background-color:  rgb(240, 169, 198);
+}
+
+.edit-ti {
+    text-align: center;
+    color: #e91745;
+}
+
+table.contained{
+    margin: 0 15%;
+    width: 70%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.edit-cell{
+    text-align: center;
+}
+
+.edit-cell button{
+    display: inline-block;
+}
+
+.edit-cell a{
+    text-decoration: none;
+    background-color: rgb(52, 100, 212);
+    padding: 4px 8px;
+    margin: 2px 0;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.edit-cell a:hover{
+    background-color:  rgb(27, 82, 212);
+}
+
+table{
+    /* border: 1px solid black; */
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: start;
+    background-color: rgb(240, 169, 198);
+    padding: 8px 4px;
+}
+
+tr{
+    border-bottom: 1px solid #b3b3b3;
+}
+
+tfoot tr{
+    border-bottom: 0;
+}
+
+
+.edit-form{
+color:#e91745
+}
+
+small{
+    font-size: 12px;
+ }
+
+
+ tfoot tr.sum td {
+    text-align: right;
+ }
+ 
+/* #titulos{
+    text-align: center;
+    box-shadow:#e91745;
+
+    width: 50%;
+    padding: 16px 8px;
+    background-color: rgb(240, 169, 198);
+    border: rgb(240, 169, 198);;
+
+} */
+/* .text-center{
+    text-align: center;
+    color: #e91745;
+} */
+
+.header{
+    text-align: center;
+}
+
+.edit-form{
+    text-align: center;
+    color: #e91745;
+    display: block;
+    width: 30%;
+    background-color: #f59db0;
+    box-shadow: 4px 4px 4px #e93058;
+    margin: auto;
+    margin-top: 3%;
+    padding-top: 5px;
+    border-radius: 8px;
+}
+
+.forms- input{
+    width: 60%;
+}
+.forms-- input{
+    width: 57%;
+}
+
+.forms-{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+} 
+
+.forms--{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.forms{
+    text-align:left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card{
+    text-align: center;
+    padding: 8px 4px;
+    display: block;
+    width: 40%;
+    margin:auto;
+    margin-top: 30px;
+    padding: 50;
+    box-shadow: 5px 5px 5px #e93058;
+    background-color: rgb(253, 133, 183);
+    border-radius: 12px;
+}
+.btn {
+    border: 0;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn.btn-sucess{
+    background-color: rgb(205, 166, 241);
+}
+.btn.btn-sucess:hover{
+    background-color: rgb(212, 188, 233);
+}
+.btn.btn-sucess:active{
+    background-color: rgb(156, 101, 207);
+}
+.btn.btn-warning{
+    background-color: rgb(253, 212, 75) ;
+}
+
+.btn.btn-warning:hover{
+    background-color:rgb(238, 230, 113) ;
+}
+
+.btn.btn-warning:active{
+    background-color:rgb(221, 173, 17) ;
+}
+
+.btn.btn-danger{
+    background-color: rgb(219, 35, 29) ;
+}
+
+.btn.btn-danger:hover{
+    background-color:rgb(255, 76, 52) ;
+}
+
+.btn.btn-danger:active{
+    background-color:#8b0303 ;
+}
+
+
+.button {
+    font-size: large;
+    display:block;
+    align-items: center;
+    margin-top: 15px;
+    border: 0;
+    background-color:#e91745;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: inline-center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.img{
+
+    display: flex;
+    margin: auto;
+    border: 50px;
+    border-radius: 8px;
+    border: solid;
+    border-color: #e91745;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* html, body {
+        background-color:#dd6d85
+    } */
+    .edit-index {
+        margin: 0 48px;
+     }
+    
+     .edit-index a {
+        display: block;
+     }
+}
+
+.mundo{
+    background-color:rgb(250, 242, 245);
+    padding: 60px;
+    text-align: center;
+    color: #000000;
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+.mundo input{
+    text-align: center;
+    font-size: large;
+    width: 25%;
+    height: 30px;
+    border-radius: 4px;
+    border-color: #dfd0d0;
+    margin-bottom: 10px;
+}
+
+#tentar{
+    Font-size: large;
+    display:block;
+    align-items: center;
+    margin-top: 30px;
+    border: 0;
+    background-color:#b6b3b3;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: inline-center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#foto{
+    width: 300px;
+    height: 300px;
+}

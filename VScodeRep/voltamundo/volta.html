@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+    <script type="text/javascript">
+       
+       const letras = ["V", "O", "L", "T", "A"];
+        let acerto = 0;
+        let errou = 0;
+        var word_v = ["Vaticano", "Venezuela", "Vancouver"];
+       var word_o = ["Otawa", "Orlando", "Oman"];
+       var word_l = ["Londres", "Liverpool", "Luxemburgo"];
+       var word_t = ["Taiwan", "Turquia","Tailandia"];
+       var word_a = ["Alemanha", "Argentina", "Amazonas"];
+
+       function adivinhar() {
+            let word = document.getElementById("tentativa").value;
+                if(word.charAt(0) === letras[acerto]){
+                    var acertou = alert("Você pode ir");
+                    acerto++;
+                    errou = 0;
+                } else {
+                    var naoacertou = alert("Você não pode ir");
+                    errou++;
+                }
+
+                document.getElementById("tentativa").value = "";
+
+                
+                if(errou === 3){
+                    var dica = "";
+                switch(acerto){
+                        case 0: dica = word_v[0];
+                        break;
+                        case 1: dica = word_o[0];
+                        break;
+                        case 2: dica =word_l[0];
+                        break;
+                        case 3: dica =word_t[0];
+                        break;
+                        case 4: dica = word_a[0];
+                        break;
+                
+                    }
+                    errou = 0;
+                    var dica = alert("Você pode ir para " + dica );
+                }
+
+                if(acerto === 5) {
+                    acerto = 0;
+                }
+            }      
+
+        function incluir() {
+            let word = document.getElementById("tentativa").value;
+            if(word.charAt(0) === "V" && !word_v.includes(word)){
+                word_v.push(word);
+            }
+            if(word.charAt(0)=== "O" && !word_o.includes(word)){
+                word_o.push(word);
+            }
+            if(word.charAt(0)=== "L" && !word_l.includes(word)){
+                word_l.push(word);
+            }
+            if(word.charAt(0)=== "T" && !word_t.includes(word)){
+                word_t.push(word);
+            }
+            if(word.charAt(0)=== "A" && !word_a.includes(word)){
+                word_a.push(word);
+            }
+        }
+
+      
+        
+    </script>
+</head>
+<body class="mundo">
+    <img id="foto" src="https://cdn-icons-png.flaticon.com/512/120/120094.png">
+    <h1>Escolha um destino:</h1>
+    <input type="text" id="tentativa">
+    <button id="tentar" onclick="adivinhar()">Tentar</button>
+</body>
+</html>
